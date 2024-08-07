@@ -1,0 +1,79 @@
+.textbox_contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img_contacts {
+    width: 100%;
+    height: 70vh;
+}
+.text_contacts {
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    font-size: 100px;
+    color: rgb(4, 91, 102);
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(157, 209, 191);
+    text-shadow: 3px 3px #02282c;
+}
+.box_contacts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.smallbox_one_contacts {
+    width: 350px;
+    margin: 5px;
+    text-align: justify;
+}
+.headertext_contacts {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(4, 91, 102);
+    text-align: center;
+    font-weight: bold;
+}
+.agency_contacts {
+    font-family: "Montserrat", sans-serif;
+}
+.list_contacts {
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+.input_contacts {
+    border: none;
+    padding: 15px 20px;
+    font-size: 15px;
+    background-color:hsl(143, 23%, 74%);
+    font-family: "Montserrat", sans-serif;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+}
+.first_btn {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.btn_contacts {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(4, 91, 102);
+    font-weight: bold;
+    background-color:rgba(67, 158, 103, 0.5);
+}
+@media all and (max-width: 800px) {
+    .text_contacts {
+        font-size: 50px;
+        
+    }
+
+}
+
+

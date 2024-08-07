@@ -1,0 +1,110 @@
+.about_header {
+    display: flex;
+    justify-content: center;
+}
+.about_image {
+    width: 100%;
+    height: 70vh;
+}
+.about_choose {
+    position: absolute;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 120px;
+    -webkit-text-stroke: 1px rgb(157, 209, 191);
+    mix-blend-mode: screen;
+    text-shadow: 3px 3px #c2e6d2;
+}
+.about_bigbox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: -160px;
+}
+.about_smallbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 4px #1d5b31;
+}
+.about_choosetext {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    color: rgb(5, 94, 67);
+    font-weight: bold;
+}
+.about_chooseimg {
+    border-radius: 20px;
+}
+.about_type {
+    margin: 15px;
+    padding: 10px;
+}
+.type_img {
+    width: 100%;
+    height: 70vh;
+    z-index: -1;
+}
+.header_typeoftour {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.head_typetour {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.box_typetour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box_imgicon {
+    padding: 50px;
+    background-color: rgba(137, 201, 140, 0.5);
+    box-shadow: 2px 2px 2px 3px;
+}
+.typeoftour_icon {
+    border-radius: 50px;
+    background-color: rgba(42, 74, 50, 0.5);
+    padding: 10px;
+    position: absolute;   
+    margin-left: -45px; 
+    margin-top: -30px;
+    border: 3px solid ;
+}
+.typeoftour_img {
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 3px rgb(69, 178, 125);
+}
+.bottom_typeoftour {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(54, 153, 94, 0.5);
+    width: 100%;
+    height: 15vh;
+}
+.bottom_about {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    color: rgb(5, 94, 67);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media all and (max-width: 800px) {
+    .about_smallbox {
+        margin: 10px;
+    }
+
+}
+@media all and (max-width: 500px) {
+    .about_choose {
+        font-size: 100px;
+    }
+}
