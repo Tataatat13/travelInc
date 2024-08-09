@@ -99,18 +99,18 @@ function Home (){
                         placeholder="Enter the name of the city"
                         onChange={myWeatherSearch}
                         value={mySearch}
+                        
                     />
-                    </form>
-
-                    <button className="btn" onClick={finalSearch}>
+                    <button className="btn">
                     <img
                         src="https://img.icons8.com/?size=100&id=EWXLJBR0k8Tm&format=png&color=40C057"
                         alt="icon"
                         width="20px"
                     />
                 </button>
+                    </form>
 
-                {stateLoader && <LoaderPage />}
+                    {stateLoader && <LoaderPage />}
 
                 <div>
                     <TodayDate/>

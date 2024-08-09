@@ -13,6 +13,7 @@ import About from './About/About';
 import Tours from './Tours/Tours';
 import Gallery from './Gallery/Gallery';
 import Contacts from './Contacts/Contacts';
+import Footer from './Footer';
 
 
 
@@ -40,14 +41,8 @@ function App() {
       </Routes>
   </Router>
 
-        <div className='bottom_line'>
-          <div>
-          <a className='bottom_logo' href="https://github.com/Tataatat13"><img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000" alt="logo" width="25px"/></a>
-          <a className='bottom_logo' href="https://github.com/Tataatat13"><img src="https://img.icons8.com/?size=100&id=59813&format=png&color=000000" alt="logo" width="25px"/></a>
-          <a className='bottom_logo' href="https://github.com/Tataatat13"><img src="https://img.icons8.com/?size=100&id=86875&format=png&color=000000" alt="logo" width="25px"/></a>
-          </div>
-          <p className='education_bottom'>This website has been created for education purposes ⓒT.Natalia</p>
-        </div>
+    <Footer/>
+        
   </div>
   
 
