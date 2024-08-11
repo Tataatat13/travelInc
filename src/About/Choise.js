@@ -1,10 +1,15 @@
-function Choise ({listchoise}) {
+import { choisedata } from './choisedata';
+
+function Choise () {
+    
+    const choise = choisedata ;
+
     return (
          
 
     <div className='about_bigbox'>
 
-        {listchoise.map((element => {
+        {choise.map((element => {
             const{id, choisetext, choiseimg} = element;
             return (
                     <div className='about_smallbox' key={id}>

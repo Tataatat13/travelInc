@@ -1,7 +1,14 @@
-function Type ({listtype}) {
+
+import { Typedata } from './Typedata';
+
+
+function Type () {
+
+    const typeOfTour = Typedata;
+
     return ( <div className='head_typetour'>
 
-        {listtype.map((element => {
+        {typeOfTour.map((element => {
             const{id, type, touricon, tourimg} =element;
             return (
                     <div className='box_typetour' key={id}>

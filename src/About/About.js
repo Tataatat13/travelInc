@@ -1,9 +1,6 @@
 import gsap from 'gsap';
 import './About.css';
-import { useLayoutEffect, useState } from 'react';
-
-import { Typedata } from './Typedata';
-import { choisedata } from './choisedata';
+import { useLayoutEffect } from 'react';
 import Choise from './Choise';
 import Type from './Type';
 
@@ -15,10 +12,7 @@ function About (){
         gsap.fromTo(".about_smallbox", { opacity:0, y: -100,}, {duration: 3, opacity: 1, y: 0});
     },[]);
 
-    const [choise] = useState(choisedata);
-    const [typeOfTour] = useState(Typedata);
-
-
+    
     return (
         <div className="about_headbox">
             
@@ -27,7 +21,7 @@ function About (){
                         <h2 className='about_choose'>Why Choose us?</h2>
                     </div>
 
-                    <Choise listchoise={choise}/>
+                    <Choise/>
 
                 <div className='about_type'>
                 
@@ -36,7 +30,7 @@ function About (){
                         <h3 className="smallbox_weather">Diverse Tour Type</h3>
                         </div>
 
-                        <Type listtype={typeOfTour}/>
+                        <Type/>
 
                     </div>
 
