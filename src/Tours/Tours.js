@@ -1,18 +1,15 @@
-import { useLayoutEffect, useState } from 'react';
+import { useState } from 'react';
 import './Tours.css';
 import { data } from './data';
-
-
-
 import TypeOfTours from './TypeOfTours';
 import Buttons from './Buttons';
-import gsap from 'gsap';
+import Footer from "../Component/Footer";
+import Hero from "../Component/Hero";
+import NavBar from "../Component/NavBar";
 
 function Tours (){
 
-    useLayoutEffect (()=> {
-        gsap.fromTo(".head_tourstext", { opacity:0, y: -100,}, {duration: 3, opacity: 1, y: 0});
-    },[]);
+
 
     const [typeTours, settypeTours]=useState(data);
 
@@ -23,14 +20,28 @@ function Tours (){
 
 
     return (<div>
-        <div className="head_tours">
-            <img className='head_toursimg' src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2023/01/0D45479D-C795-48BC-A26A-EDCBF5A39136.jpeg" alt="foto"/>
-            <p className='head_tourstext'>Adventure Begins Here</p>
-            <p className='head_toursfind'>Find Your Special Tour</p>
+        <NavBar/>
+        <Hero
+        cName="hero-mid"
+        heroImg="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2023/01/0D45479D-C795-48BC-A26A-EDCBF5A39136.jpeg"
+        title="Adventure Begins Here"
+        btnClass="hide"
+        />
+
+        <div className="tours">
+            <div className='header-trip'>
+            <h3>Find Your Special Tour</h3>
+            
             <Buttons filteredTours ={chosenTours} settypeTours = {settypeTours}/>
+            
+            </div>
+        
+            
+                <TypeOfTours listTours={typeTours}/> 
+        
         </div>
         
-        <TypeOfTours listTours={typeTours}/>
+        <Footer/>
         </div>
     )
 }

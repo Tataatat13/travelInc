@@ -1,30 +1,25 @@
+
+
+
 function TypeOfTours ({listTours}){
-return(<div className="bigbox_tours">
+
+
+return(<div className="tripcard">
+
 {listTours.map((element => {
-    const {id, name,country,description, price, image} = element;
-    return (<div className="tours_card" key={id}>
-        <div className="card_toursimg">
-                
-            <div className="card_tourstext">
-                    <h2 className="toursname">{name}</h2>
-                            
-                    <h3 className="tourscountry">{country}</h3>
-                
-                    <p className="toursdescription">{description}</p>
-                
-                <div className="price_btn">            
-                    <p className="toursprice">{price}</p>
-                    <button className="tours_btn">Book Now</button>
-                </div>
+    const {id, name,country,description, image} = element;
+
+    return (<div className="t-card" key={id}>
+                    <div className="t-img">
+                    <img src={image} alt="foto"/>      
+                    </div>
+                    <h2>{name} ({country})</h2>
+                    <p>{description}</p>
                 
             </div>
-            <img  className="tourimage" src={image} alt="foto" width="330px" height="440px"/>
-                
-        </div>
-    </div>
     )
 }))}
-</div>
+    </div>
 
 )
 }

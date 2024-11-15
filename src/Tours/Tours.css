@@ -1,131 +1,78 @@
-.head_tours {
+.tours {
+    margin: 4rem 6rem;
+    color: #2a2a2a;
+}
+.tours h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+.tripcard {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-}
-.head_toursimg {
-    width: 100%;
-    height: 80vh;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px 5px rgb(119, 117, 117);
-}
-.head_tourstext {
-    position: absolute;
-    color: transparent;
-    text-transform: uppercase;
-    margin-top: 20px;
-    font-size: 100px;
-    -webkit-text-stroke: 1px rgb(157, 209, 191);
-    mix-blend-mode: screen;
-    text-shadow: 3px 3px #c2e6d2;
-}
-.head_toursfind {
-    position:absolute;
-    color: rgb(238, 245, 241);
-    margin-top: 200px;
-    font-size: 50px;
-    -webkit-text-stroke: 1px rgb(132, 135, 132);
-    mix-blend-mode: screen;
-    text-shadow: 3px 3px #b8ccc1;
-    font-family: "Montserrat", sans-serif;
-}
-.head_toursbtn {
-    position: absolute;
-    margin-top: 350px;
-}
-.toursbtn {
-    padding: 20px;
-    margin: 15px;
-    border: 1px solid;
-    border-radius: 20px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(2, 160, 107);
-    background-color: rgba(255, 255, 255, 0.5);
-    font-weight: bold;
-    font-size: 15px;
-}
-.bigbox_tours {
-    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 3rem;
 }
-.tours_card {
-    padding: 2%;
-    flex-grow: 1;
-    flex-basis: 16%;
+.t-card {
+    width: 25%;
+    box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 1rem .8rem;
+    margin: 1rem;
 }
-.card_toursimg {
+.t-img {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.t-img img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 7px;
+}
+.t-img img:hover {
+    transform: scale(1.3);
+}
+.t-card h2 {
+    font-size: 1.3rem;
+    padding: .9rem 0 .2rem 0;
+    text-align: center;
+}
+.t-card p {
+    font-size: 13px;
+}
+.tours-btn {
     display: flex;
-    background-color: rgba(102, 109, 105, 0.3);
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 3px 3px 3px 5px #f7faf8;
-}
-.card_tourstext {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    
+    margin-top: 2rem;
+    padding: 1rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    border-radius: 13px ;
 }
-.toursname {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(5, 94, 67);
-    font-weight: bold;
-}
-.tourscountry {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(30, 136, 57);
-    font-style: italic;
-}
-.toursdescription {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(10, 99, 99);
-    
-}
-.tourimage {
-    border-radius: 20px;
-}
-.toursprice {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(55, 10, 217);
-    font-size: 20px;
-}
-.price_btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.tours_btn {
+.tours-btn button {
+    padding: .8rem;
     border: none;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px 4px;
-    color:  rgb(10, 99, 99);
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
 }
-@media all and (max-width: 1200px) {
-    .head_tourstext {
-        font-size: 60px;   
+.tours-btn button:hover {
+    background-color: #01959a;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+@media all and (max-width: 850px) {
+    .tours {
+        margin: 4rem 2rem;
     }
-        .head_toursbtn {
-        margin-top: 350px;
-}
-} 
-@media all and (max-width: 800px) {
-    .head_tourstext {
-        font-size: 80px;   
+    .tripcard {
+        flex-direction: column;
     }
-}
-@media all and (max-width: 500px) {
-    .head_tourstext {
-        font-size: 70px;   
+    .t-card {
+        width: 100%;
+        margin-bottom: 1.5rem;
     }
-    .head_toursbtn {
-        margin-top: 450px;
-}
-.toursbtn {
-    padding: 10px;
-}
 }

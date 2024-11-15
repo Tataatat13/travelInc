@@ -12,10 +12,10 @@ function TodayDate () {
     const month = today.getMonth()+1;
     const year = today.getFullYear();
     const date = today.getDate();
-    setCurrentDate(`${weekdays[weekday]} ${date}.${month}.${year}`);
+    setCurrentDate(`Today: ${year}.${month}.${date}.  ${weekdays[weekday]}`);
     }, []);
     return( <div>
-        <h2 className="box_date">{currentDate}</h2>
+        <h3 className="box_date">{currentDate}</h3>
         </div>
     )
 }
