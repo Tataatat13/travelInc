@@ -57,6 +57,3 @@ const Footer = () => {
 }
 export default Footer;
 
-{/*
-    <p className='education_bottom'>This website has been created for education purposes ⓒT.Natalia</p>
-     */}
